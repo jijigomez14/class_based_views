@@ -1,0 +1,20 @@
+<!-- myapp/templates/login_list.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login List</title>
+</head>
+<body>
+    <h2>Login List</h2>
+    <ul>
+        {% for login in login_list %}
+            <li>Username: {{ login.username }}</li>
+            <li>Password: {{ login.password }}</li>
+            <hr/>
+        {% empty %}
+            <li>No logins yet.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

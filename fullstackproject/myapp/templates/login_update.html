@@ -1,0 +1,16 @@
+<!-- myapp/templates/login_update.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Login</title>
+</head>
+<body>
+    <h2>Update Login</h2>
+    <form method="post" action="">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>
